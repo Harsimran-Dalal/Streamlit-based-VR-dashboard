@@ -1,7 +1,8 @@
-shap
-lime
-streamlit
-scikit-learn
-tensorflow
-matplotlib
 pandas
+numpy
+scikit-learn
+tensorflow==2.11.0
+streamlit
+matplotlib
+shap==0.41.0
+lime
