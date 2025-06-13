@@ -1,7 +1,7 @@
-pandas
-numpy
-scikit-learn
 streamlit
+pandas
+numpy==1.23.5
+scikit-learn
 matplotlib
 shap==0.41.0
 lime
