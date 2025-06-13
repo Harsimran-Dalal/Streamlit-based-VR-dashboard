@@ -10,7 +10,7 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout, Input
 from tensorflow.keras.utils import to_categorical
 
 # Streamlit UI
-st.title("🌾 Smart Crop Recommendation with Explainability")
+st.title("Smart Crop Recommendation with Explainability")
 st.write("This dashboard predicts the most suitable crop and explains the decision using SHAP and LIME.")
 
 # Load and preprocess data
@@ -66,7 +66,7 @@ input_seq = input_scaled.reshape((1, 1, len(features)))
 # Prediction
 prediction = model.predict(input_seq)
 predicted_crop = le.inverse_transform([np.argmax(prediction)])[0]
-st.subheader("🧠 Predicted Crop:")
+st.subheader("Predicted Crop:")
 st.success(f"Recommended Crop: **{predicted_crop}**")
 
 # SHAP Explanation
@@ -83,7 +83,7 @@ with st.spinner("Generating SHAP explanation..."):
     st.pyplot(fig)
 
 # LIME Explanation
-st.subheader("🌈 LIME Explanation")
+st.subheader("LIME Explanation")
 
 with st.spinner("Generating LIME explanation..."):
     explainer_lime = lime.lime_tabular.LimeTabularExplainer(
