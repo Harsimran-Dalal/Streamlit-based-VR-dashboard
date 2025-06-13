@@ -1,9 +1,4 @@
 import streamlit as st
-import tensorflow as tf
-
-st.sidebar.markdown(f"✅ TensorFlow version: `{tf.__version__}`")
-
-import streamlit as st
 import pandas as pd
 import numpy as np
 import shap
